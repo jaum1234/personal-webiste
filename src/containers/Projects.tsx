@@ -4,15 +4,16 @@ import ProjectCard from "../components/shared/ProjectCard";
 import { projects } from "../fixtures/projects";
 import { Box } from "../styles/layout/Box";
 import { Flex } from "../styles/layout/Flex";
+import { Grid } from "../styles/layout/Grid";
 import { Text } from "../styles/Typography/Text";
 
 
 export function ProjectsContainer(): JSX.Element {
 
     return(
-        <Flex
-            flexWrap="wrap"
-            justifyContent="space-between"
+        <Grid
+            templateColumns="repeat(2, 1fr)"
+            gap="30px 50px"
         >
         {
         projects.map(project => (
@@ -55,6 +56,6 @@ export function ProjectsContainer(): JSX.Element {
             </ProjectCard>
         ))
         }
-        </Flex>
+        </Grid>
     )
 }

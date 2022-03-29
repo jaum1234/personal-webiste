@@ -9,6 +9,7 @@ function Home(): JSX.Element {
         <>
             <Box
                 as='main'
+                mb="3rem"
             >
                 <Grid
                     rowGap='10rem'

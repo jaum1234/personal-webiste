@@ -11,17 +11,17 @@ export const ProjectBox = styled(Box)`
     position: relative;
     display: flex;
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.1);
-    margin-bottom: 3rem;
     transition: 0.2s ease-in-out;
     border-radius: 5px;
 
-    width: 620px;
+    width: 100%;
     height: 250px;
 
     &:hover {
         box-shadow: 0px 9px 11px 3px rgba(0,0,0,0.1);
         transform: translateY(-10px);
     }
+
 
     @media screen and (max-width: 575px) {
         flex-direction: column;
